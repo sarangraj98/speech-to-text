@@ -1,6 +1,6 @@
 {
   "name": "speech--two--text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helps to convert speech to text.",
   "main": "index.js",
   "scripts": {
