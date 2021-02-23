@@ -4,7 +4,7 @@ This package helps you to convert speech to text. Uses only the browser api for 
 
 # How to use ?
 
-`npm i speechTotext --save`
+`npm i speech--two--text --save`
 
 After that,
 
