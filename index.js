@@ -6,15 +6,16 @@ var recognition = new SpeechRecognition();
 function recognizeSpeech(options) {
     if (options.status == 'ON') {
         recognition.start();
+        document.getElementById('speechResult').innerHTML = 'Listening...';
         recognition.onresult = function (event) {
             var result = event.results[0][0].transcript;
-            return result
+            document.getElementById('speechResult').innerHTML = result;
         }
         recognition.onerror = function (event) {
-            return event.error
+            document.getElementById('speechResult').innerHTML = event.error;
         }
         recognition.onspeechend = function (event) {
-            return 'Processing...'
+            document.getElementById('speechResult').innerHTML = 'Processing';
         }
     }else{
         recognition.stop();
